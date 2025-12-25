@@ -50,7 +50,7 @@ async function main() {
    `;
 
     console.log("Searching for query... Please wait...");
-    const response = await client.stream([
+    const response = await client.invoke([
       {
         role: "system",
         content: systemPrompt,
